@@ -98,7 +98,8 @@
                   <div class="col d-flex flex-wrap flex-lg-nowrap text-center">
                      <div class="feature-wrapper">  
                         <span class="head-text">STARTS ON</span>
-                        <span class="main-text">July, 2022</span>
+                        <!-- TODO: Add Javascript here to display date dynamically (only for the year) -->
+                        <span class="main-text">July, <span class="current_year"></span></span>
                      </div>
                      <div class="feature-wrapper">
                         <span class="head-text">DURATION</span>
@@ -593,6 +594,12 @@
                  }
              });
          });
+
+         const date = new Date();
+         const currentYear = date.getFullYear();
+         console.log(currentYear);
+
+         $('.current_year').text(currentYear)
       </script>
       
    </body>
