@@ -82,6 +82,10 @@ header .container {
   margin-right: 0;
 }
 
+.hero > .row > div {
+  padding: 0;
+}
+
 .clr-primary {
   color: #800000;
 }
@@ -104,9 +108,15 @@ header .container {
 
 .bvoc-full-form {
   font-size: 0.8em;
+  text-transform: none;
 }
 
 .hero__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1em;
+
   text-align: center;
   margin-block-start: 2em;
   font-size: 1.3rem;
@@ -118,7 +128,6 @@ header .container {
 
 .hero__info .row {
   justify-content: center;
-  margin-block-end: 1em;
 }
 
 .division-line {
@@ -144,6 +153,44 @@ header .container {
   display: block;
   /* color: #800000; */
   font-weight: 500;
+}
+
+@media (min-width: 992px) {
+  header .container,
+  .hero.container {
+    padding-inline: 3rem;
+  }
+
+  .hero {
+    padding-block-start: 3em;
+    padding-block-end: 5em;
+  }
+
+  .page-title {
+    text-align: left;
+  }
+
+  .hero__info {
+    margin-block-start: 3em;
+    font-size: 1.5rem;
+  }
+
+  .hero__info .row {
+    justify-content: flex-start;
+  }
+
+  .info__eligibility {
+    display: flex;
+    text-align: left;
+  }
+}
+
+.npf-form {
+  height: 100%;
+  width: 70%;
+  margin-left: auto;
+  background-color: #800000;
+  border-radius: 10px;
 }
 
 /* ===== Hero Section ENDS ===== */
