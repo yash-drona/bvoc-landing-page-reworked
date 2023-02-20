@@ -80,11 +80,11 @@ header .container {
 .hero .row {
   margin-left: 0;
   margin-right: 0;
-  gap: 2em;
   flex-wrap: nowrap;
 }
 
 .hero > .row {
+  gap: 2em;
   flex-direction: column;
 }
 
