@@ -80,6 +80,12 @@ header .container {
 .hero .row {
   margin-left: 0;
   margin-right: 0;
+  gap: 2em;
+  flex-wrap: nowrap;
+}
+
+.hero > .row {
+  flex-direction: column;
 }
 
 .hero > .row > div {
@@ -166,6 +172,10 @@ header .container {
     padding-block-end: 5em;
   }
 
+  .hero > .row {
+    flex-direction: row;
+  }
+
   .page-title {
     text-align: left;
   }
@@ -183,12 +193,15 @@ header .container {
     display: flex;
     text-align: left;
   }
+
+  .npf-form {
+    width: 80%;
+    margin-left: auto;
+  }
 }
 
 .npf-form {
-  height: 100%;
-  width: 70%;
-  margin-left: auto;
+  height: 500px;
   background-color: #800000;
   border-radius: 10px;
 }
