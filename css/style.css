@@ -56,7 +56,7 @@ header .container {
   align-items: center;
 }
 .logo {
-  max-width: 6rem;
+  max-width: 7rem;
 }
 .help-container {
   text-align: right;
@@ -69,6 +69,7 @@ header .container {
 }
 .help-number a {
   color: #800000;
+  font-size: 1.4em;
 }
 
 /* ===== Hero Section ===== */
@@ -178,6 +179,7 @@ header .container {
 
   .page-title {
     text-align: left;
+    font-size: 2.7rem;
   }
 
   .hero__info {
