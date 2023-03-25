@@ -312,6 +312,7 @@ header .container {
   margin: -66px auto 0;
   padding: 15px;
   line-height: 0;
+  overflow: hidden;
 }
 .icon-pg img {
   width: 100%;
