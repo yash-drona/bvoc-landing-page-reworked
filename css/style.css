@@ -110,6 +110,10 @@ header .container {
   font-weight: 900;
 }
 
+.page-title sup {
+  text-transform: lowercase;
+}
+
 .page-title span {
   display: block;
 }
@@ -226,7 +230,7 @@ header .container {
 /* ===== Hero Section ENDS ===== */
 
 /* .banner {
-  background-image: url(../images/banner.jpg);
+  background-image: url(../images/banner.webp);
   background-size: cover;
 }
 .phnbtn .btn {
@@ -271,7 +275,7 @@ header .container {
   letter-spacing: 0.36px;
 } */
 .why-voc {
-  background-image: url(../images/ones.jpg);
+  background-image: url(../images/ones.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -484,13 +488,13 @@ header .container {
   object-fit: contain;
 }
 .why-voc-hubs {
-  background-image: url(../images/MG_6010.jpg);
+  background-image: url(../images/MG_6010.webp);
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .why-ad-process {
-  background-image: url(../images/MGL5996.jpg);
+  background-image: url(../images/MGL5996.webp);
   background-size: cover;
   background-attachment: fixed;
   color: #ffffff;
@@ -579,21 +583,6 @@ header .container {
   background: #800000;
   color: #fff;
 }
-.bottom-fix-whatsapp {
-  position: fixed;
-  top: 0;
-  width: 0;
-  height: auto;
-  z-index: 99999 !important;
-  bottom: 29px;
-  display: flex;
-  justify-content: flex-end;
-  align-items: flex-end;
-  right: 31px;
-}
-.bottom-fix-whatsapp a i {
-  animation: shadow-pulse 1s infinite;
-}
 @keyframes shadow-pulse {
   0% {
     box-shadow: 0 0 0 0px #45b72eb3;
@@ -602,18 +591,21 @@ header .container {
     box-shadow: 0 0 0 25px #45b72eb3;
   }
 }
-.bottom-fix-whatsapp a i {
-  font-size: 36px;
-  width: 52px;
-  height: 52px;
-  color: #ffffff;
+.whatsapp-cta {
+  position: fixed;
+  right: 35px;
+  bottom: 35px;
   background: #45b72e;
-  font-weight: 400;
-  box-shadow: 1px 2px 6px #6d6d6d;
+  height: 70px;
+  width: 70px;
+  padding: 0.7em;
+  overflow: hidden;
   border-radius: 50%;
-  text-align: center;
-  line-height: 1.4;
-  transition: 0.2s all;
+  animation: shadow-pulse 1s infinite;
+}
+.whatsapp-cta img {
+  width: 100%;
+  aspect-ratio: 1 / 1;
 }
 .admisn_btn {
   transition-duration: 0.3s;
@@ -628,6 +620,11 @@ header .container {
   padding: 10px 20px;
   text-transform: uppercase;
   cursor: pointer;
+}
+.admisn_btn:hover,
+.admisn_btn:focus-visible {
+  color: #fff;
+  text-decoration: underline;
 }
 .banner-tagline {
   display: inline-block;
@@ -975,14 +972,6 @@ header .container {
   .app-deadline-main-wrapper {
     padding: 0 15px;
   }
-  .bottom-fix-whatsapp a i {
-    font-size: 41px;
-    width: 52px;
-    height: 54px;
-    line-height: 1.4;
-    padding: 0;
-    text-align: center;
-  }
 }
 @media (max-width: 767px) {
   .address-info {
@@ -1045,9 +1034,6 @@ header .container {
     text-align: center;
     left: 0;
     border-top: 1px solid;
-  }
-  .bottom-fix-whatsapp {
-    bottom: 53px;
   }
   .time-model-flex.snd::before,
   .time-model-flex::before {
