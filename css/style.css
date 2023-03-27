@@ -697,7 +697,7 @@ header .container {
   height: 1px;
   left: 0;
   opacity: 0;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  /* -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; */
   position: absolute;
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -1287,6 +1287,11 @@ header .container {
 }
 
 @-webkit-keyframes textclip12 {
+  to {
+    background-position: 200% center;
+  }
+}
+@keyframes textclip12 {
   to {
     background-position: 200% center;
   }
