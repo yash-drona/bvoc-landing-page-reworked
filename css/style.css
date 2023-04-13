@@ -339,6 +339,9 @@ header .container {
   height: 75%;
   background-color: #fff;
 }
+.Specialization-programs-ig p {
+  text-align: justify;
+}
 .Specialization-programs-ig h3 {
   margin: 20px 0 0px;
   color: #800000;
@@ -350,6 +353,8 @@ header .container {
 .divider {
   border-bottom: 2px solid maroon;
   width: 58px;
+  height: 0;
+  overflow: hidden;
   text-align: center;
   margin: 20px auto;
 }
