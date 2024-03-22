@@ -278,6 +278,7 @@ header .container {
   background-image: url(../images/ones.webp);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 .wb-back {
   background-color: #212529bf;
@@ -496,6 +497,7 @@ header .container {
   background-image: url(../images/MG_6010.webp);
   background-size: cover;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .why-ad-process {
