@@ -335,9 +335,9 @@ header .container {
   position: relative;
   text-align: center;
   padding: 0 7% 23px;
-  margin-bottom: 85px;
-  margin-top: 47px;
-  height: 75%;
+  /* margin-bottom: 85px; */
+  margin-top: 66px;
+  /* height: 75%; */
   background-color: #fff;
 }
 .Specialization-programs-ig p {
@@ -1095,7 +1095,7 @@ header .container {
     padding: 10px 5% 1px;
     margin-bottom: 57px;
     margin-top: 0;
-    height: 87% !important;
+    /* height: 87% !important; */
   }
   .Specialization-programs-ig p {
     margin-top: 64px;
@@ -1319,4 +1319,15 @@ header .container {
 } */
 .in-why-voc .col-lg-4 {
   margin-bottom: 10px;
+}
+
+.in-why-voc {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2em;
+}
+
+.grid__child {
+  display: grid;
+  grid-template-rows: subgrid;
 }
